@@ -1,0 +1,23 @@
+.hero__btn {
+    display: inline-block;
+    padding: 10px 24px;
+    font-family: inherit;
+    line-height: 1.6;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    transition: background-color var(--animation-hover),
+        color var(--animation-hover);
+&:hover,
+&:focus {
+    background-color: var(--btn-background-color);
+    color: var(--white-color);
+}
+   @media screen and (min-width: 1199px) {
+    padding: 10px 32px;   }
+    }

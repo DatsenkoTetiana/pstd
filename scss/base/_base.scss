@@ -1,0 +1,17 @@
+body {
+    font-family: var(--main-font);
+    color: var(--main-txt-color);
+    margin: 0;
+}
+.no-scroll {
+    overflow: hidden;
+}
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}

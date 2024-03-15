@@ -1,0 +1,86 @@
+.hero {
+  @extend %section;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  text-align: center;
+  background-color: var(--darkblue-background-color);
+
+  max-width: 1600px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @media screen and (min-width: 1199px) {
+    padding: 200px 0 200px 0;
+  }
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero/img@1x-s.jpg);
+  @media (mim-device-pixel-ratio: 2),
+    (min-resolution: 192pi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/img@2x-s.jpg);
+  }
+  @media screen and (min-width: 767px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/img@1x-m.jpg);
+    @media (mim-device-pixel-ratio: 2),
+      (min-resolution: 192pi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero/img@2x-m.jpg);
+    }
+  }
+  @media screen and (min-width: 1199px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/img@1x-l.jpg);
+    @media (mim-device-pixel-ratio: 2),
+      (min-resolution: 192pi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero/img@2x-l.jpg);
+    }
+  }
+}
+.hero__container {
+  @extend %container;
+}
+
+.hero__title {
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.3;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  animation: move 1500ms linear 100ms 1 both;
+
+  @media screen and (min-width: 1199px) {
+    font-size: 44px;
+  }
+}
